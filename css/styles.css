@@ -68,7 +68,9 @@ body {
   margin: 0 auto;
 }
 
-/* button */
+
+
+/* button hero */
 
 .button-hero {
   display: block;
@@ -97,33 +99,9 @@ body {
   box-shadow: var(--button-shadow-hero);
 }
 
-.button-portfolio {
-  display: inline-block;
-  border: 0px solid transparent;
-  padding: 6px 22px;
-  border-radius: 4px;
-  min-width: 73px;
-  text-align: center;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  font-family: inherit;
-  cursor: pointer;
-  color: var(--primary-text-color);
-  background-color: var(--button-secondary-background-color);
-}
 
-.button-portfolio:hover,
-.button-portfolio:focus {
-  color: var(--white-text-color);
-  background-color: var(--button-primary-background-color);
-  box-shadow: var(--button-shadow);
-  color: var(--white-text-color);
-}
-
- /* лого  */
+ /* Лого  */
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -147,7 +125,10 @@ body {
   color: var(--white-text-color);
 }
 
+
+
 /* Панель навігації */
+
 .navigation-container {
   display: flex;
   align-items: center;
@@ -183,14 +164,12 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 
-  transition: background-color 250ms var(--time-delay);
+  transition: color 250ms var(--time-delay);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text-color);
-  
-  transition: background-color 250ms var(--time-delay);
 }
 
 .nav-link::after {
@@ -239,7 +218,7 @@ body {
   margin-right: 10px;
   fill: var(--secondary-text-color);
   
-  transition: background-color 250ms var(--time-delay);
+  transition: fill 250ms var(--time-delay);
 }
 
 .auth-link:hover .auth-icon,
@@ -251,8 +230,9 @@ body {
   border-bottom: 1px solid var(--border-bottom-header-color);
 }
 
-/* Hidden headers */
 
+
+/* Hidden headers */
 
 .visually-hidden {
   position: absolute;
@@ -267,8 +247,8 @@ body {
   margin: -1px;
 }
 
-/* Images */
 
+/* Images */
 
 .activity-image,
 .team-image,
@@ -276,8 +256,8 @@ body {
   display: block;
 }
 
-/*  "Hero" */
 
+/*  "Hero" */
 
 .hero {
   text-align: center;
@@ -307,8 +287,9 @@ body {
   color: var(--white-text-color);
 }
 
- /* наші переваги */
 
+
+ /* наші переваги */
 
 .preference {
   padding: 94px 0;
@@ -356,6 +337,8 @@ body {
   color: var(--secondary-text-color);
 }
 
+
+
 /* Чим ми займаємось */
 
 .activity {
@@ -400,8 +383,9 @@ body {
 
 }
 
-/*  команда */
 
+
+/*  команда */
 
 .team {
   padding: 94px 0;
@@ -480,8 +464,9 @@ body {
   fill: var(--white-text-color);
 }
 
-/* Постійні клієнти */
 
+
+/* Постійні клієнти */
 
 .clients {
   padding: 94px 0;
@@ -532,6 +517,35 @@ body {
 
 /* Портфоліо */
 
+.button-portfolio {
+  display: inline-block;
+  border: 0px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
+  min-width: 73px;
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  font-family: inherit;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--button-secondary-background-color);
+
+  transition: color 250ms var(--time-delay), background-color 250ms var(--time-delay),
+  box-shadow 250ms var(--time-delay);
+}
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--white-text-color);
+  background-color: var(--button-primary-background-color);
+  box-shadow: var(--button-shadow);
+  color: var(--white-text-color);
+}
+
 .portfolio {
   padding: 94px 0;
 }
@@ -551,7 +565,6 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
-
 
 .portfolio-card:hover {
   box-shadow: var(--portfolio-elements-shadow);
@@ -591,7 +604,7 @@ body {
 .portfolio-link {
   display: block;
 
-  transition: box-shadow 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--time-delay);
 }
 
 .portfolio-link:hover,
@@ -617,8 +630,6 @@ body {
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
-
-
 
 
 
@@ -712,6 +723,8 @@ body {
 .cellar-link:focus {
   background-color: var(--button-primary-background-color);
 }
+
+
 
 /* модальне вікно  */
 
